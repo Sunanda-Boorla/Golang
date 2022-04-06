@@ -31,7 +31,7 @@ func main() {
 	fmt.Scanln(&n)
 	array := make([]int, n)
 	for i := 0; i < n; i++ {
-		fmt.Printf("Enter %d element: ", i)
+		fmt.Printf("Enter %d element: ", i+1)
 		fmt.Scanln(&array[i])
 	}
 	topTwoMax(array)
