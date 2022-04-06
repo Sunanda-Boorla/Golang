@@ -33,6 +33,11 @@ func (s *Stack) Pop() (int, error) {
 
 }
 
+//size
+func (s *Stack) Size() int {
+	return len(s.items)
+}
+
 func main() {
 	myStack := Stack{}
 	fmt.Println(myStack)
@@ -42,7 +47,8 @@ func main() {
 	fmt.Println(myStack)
 	fmt.Println(myStack.Pop())
 	fmt.Println(myStack)
-	fmt.Println(myStack.Peek())
+	fmt.Println("Peek element: ", myStack.Peek())
+	fmt.Println("size of Stack:", myStack.Size())
 	myStack.Pop()
 	myStack.Pop()
 	myStack.Pop()
